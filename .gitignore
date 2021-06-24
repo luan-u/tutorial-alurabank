@@ -2,4 +2,5 @@ app/.DS_Store
 app/js/.DS_Store
 app/js/controllers/.DS_Store
 app/js/models/.DS_Store
+js
 node_modules
