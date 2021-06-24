@@ -5,6 +5,9 @@ class NegociacaoController {
     private _inputValor: HTMLInputElement;
     private _negociacoes = new Negociacoes();
 
+    // vai dar um erro de compilação, pois a classe não recebe parâmetro ainda
+    private _negociacoesView = new NegociacoesView('#negociacoesView');
+
     constructor() {
         this._inputData = <HTMLInputElement>document.querySelector('#data');
         this._inputQuantidade = <HTMLInputElement>document.querySelector('#quantidade');
