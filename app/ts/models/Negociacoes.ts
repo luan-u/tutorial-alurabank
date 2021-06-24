@@ -8,8 +8,8 @@ class Negociacoes {
         this._negociacoes.push(negociacao);
     }
 
-    paraArray() {
+    paraArray(): Negociacao[] {
 
-        return this._negociacoes;
-     }
+        return [].concat(this._negociacoes);
+    }
 }
