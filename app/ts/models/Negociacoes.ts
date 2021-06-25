@@ -1,9 +1,10 @@
-class Negociacoes {
+import { Negociacao } from './Negociacao';
 
-    // private _negociacoes: Array<Negociacao> = [];
+export class Negociacoes {
+
     private _negociacoes: Negociacao[] = [];
 
-    adiciona(negociacao: Negociacao) {
+    adiciona(negociacao: Negociacao): void {
 
         this._negociacoes.push(negociacao);
     }
