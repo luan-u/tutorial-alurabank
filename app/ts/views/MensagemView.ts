@@ -1,10 +1,4 @@
-class MensagemView extends View {
-
-    update(model: string) {
-
-        // erro de compilação
-        this._elemento.innerHTML = this.template(model);
-    }
+class MensagemView extends View<string> {
 
     template(model: string): string {
 
