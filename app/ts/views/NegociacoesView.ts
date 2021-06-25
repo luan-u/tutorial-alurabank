@@ -1,14 +1,8 @@
-class NegociacoesView {
-
-    private _elemento: Element;
-
-    constructor(seletor: string) {
-
-        this._elemento = document.querySelector(seletor);
-    }
+class NegociacoesView extends View{
 
     update(model: Negociacoes) {
 
+        // erro de compilação
         this._elemento.innerHTML = this.template(model);
     }
 
