@@ -43,7 +43,6 @@ export class NegociacaoController {
 
         this._negociacoesView.update(this._negociacoes);
         this._mensagemView.update('Negociação adicionada com sucesso!');
-
     }
 
     private _ehDiaUtil(data: Date) {
@@ -53,10 +52,9 @@ export class NegociacaoController {
 }
 
 enum DiaDaSemana {
-
-    Domingo, 
-    Segunda, 
-    Terca, 
+    Domingo,
+    Segunda,
+    Terca,
     Quarta, 
     Quinta, 
     Sexta, 
