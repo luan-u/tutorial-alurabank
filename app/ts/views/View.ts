@@ -1,8 +1,6 @@
-declare var $: any;
-
 abstract class View<T> {
 
-    protected _elemento: any;
+    private _elemento: JQuery;
 
     constructor(seletor: string) {
 
