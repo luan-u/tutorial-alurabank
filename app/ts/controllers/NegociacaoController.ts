@@ -24,6 +24,7 @@ export class NegociacaoController {
         this._negociacoesView.update(this._negociacoes);
     }
 
+    @throttle()
     adiciona(event: Event) {
 
         event.preventDefault();
