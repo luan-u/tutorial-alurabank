@@ -1,6 +1,6 @@
 import { NegociacoesView, MensagemView } from '../views/index';
 import { Negociacoes, Negociacao } from '../models/index';
-import { domInject } from '../helpers/decorators/index';
+import { domInject, throttle } from '../helpers/decorators/index';
 import { NegociacaoParcial } from '../models/index';
 
 export class NegociacaoController {
@@ -51,6 +51,7 @@ export class NegociacaoController {
         return data.getDay() != DiaDaSemana.Sabado && data.getDay() != DiaDaSemana.Domingo;
     }
 
+    @throttle()
     importarDados() {
 
         function isOK(res: Response) {
