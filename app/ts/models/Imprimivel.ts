@@ -1,6 +1,4 @@
-// app/ts/models/Imprimivel.ts
+export interface Imprimivel {
 
-export abstract class Imprimivel {
-
-    abstract paraTexto(): void;
+    paraTexto(): void;
 }
